@@ -1,28 +1,96 @@
 @import "tailwindcss";
 
+@theme{
+    --font-exo2: "Exo 2", "sans-serif";
+    --font-montserrat: 'Montserrat', sans-serif;
+}
 
-
-body{
+body {
     font-family: 'Montserrat', sans-serif;
 }
-.title{
+
+.title {
     font-family: 'Exo 2', sans-serif;
 }
-.animate-fadeIn{
+
+.animate-fadeIn {
     transition: opacity 0.2s ease, transform 0.3s ease;
 }
-.animate-fadeIn-text{
+
+.animate-fadeIn-text {
     transition-delay: 0.5s;
     transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
     width: 10px;
     height: 10px;
     margin: 10px !important;
+    color: blue !important;
 }
 
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
     background-color: #fff;
     outline: 5px solid #ffffff5d;
+}
+
+/* Style 9
+   ----------------------------- */
+.section-title h1 {
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #222;
+    letter-spacing: 1px;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+}
+
+.section-title h1 span {
+    margin-top: 5px;
+    font-size: 15px;
+    color: #444;
+    word-spacing: 1px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.section-title h1 span:after,
+.section-title h1 span:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    height: 5px;
+    background-color: #f8f8f8;
+}
+
+
+/***********************
+* about section
+***********************/
+.play-icon{
+    animation-name: ping;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ping{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
