@@ -15,3 +15,14 @@ body{
     transition-delay: 0.5s;
     transition: opacity 0.4s ease, transform 0.4s ease;
 }
+
+.swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+    margin: 10px !important;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #fff;
+    outline: 5px solid #ffffff5d;
+}
