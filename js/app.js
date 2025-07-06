@@ -60,6 +60,52 @@ $(document).ready(function () {
     }
       
     });
+    //  featured swiper slider
+    const featuredSwiper = new Swiper('.featured-swiper', {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 10,
+      effect: 'slide', 
+      speed: 3000,
+      direction: 'horizontal', 
+      
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+    on: {
+        slideChangeTransitionStart: function(){
+            $('.animate-fadeIn').css({
+                'opacity': '0',
+                'transform': 'translateY(30px)'
+            });
+            
+            $('.animate-fadeIn-text').css({
+                'opacity': '0',
+                'transform': 'translateY(50px)'
+            });
+        },
+        slideChangeTransitionEnd: function(){
+            $('.animate-fadeIn').css({
+                'opacity': '1',
+                'transform': 'translateY(0)'
+            });
+            $('.animate-fadeIn-text').css({
+                'opacity': '1',
+                'transform': 'translateY(0)'
+            });
+        }
+    }
+      
+    });
     
     
     

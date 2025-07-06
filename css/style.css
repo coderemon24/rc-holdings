@@ -3,6 +3,7 @@
 @theme{
     --font-exo2: "Exo 2", "sans-serif";
     --font-montserrat: 'Montserrat', sans-serif;
+    --color-primary: #2386C8;
 }
 
 body {
@@ -26,7 +27,8 @@ body {
     width: 10px;
     height: 10px;
     margin: 10px !important;
-    color: blue !important;
+    background: rgb(255, 255, 255) !important;
+    opacity: 1 !important;
 }
 
 .swiper-pagination-bullet-active {
@@ -93,4 +95,57 @@ body {
     100%{
         transform: scale(1);
     }
+}
+.custom-btn {
+  padding: 10px 25px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  color: #2386C8;
+}
+
+/**** BTN No. 14 ****/
+.btn-14 {
+  border: 2px solid #2386C8;
+  z-index: 1;
+}
+.btn-14:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background: #2386C8;
+  transition: all 0.3s ease;
+}
+.btn-14:hover {
+  color: #fff;
+}
+.btn-14:hover:after {
+  left: 0;
+  width: 100%;
+}
+.btn-14:active {
+  top: 2px;
+}
+
+/***********************
+*  featured section
+***********************/
+
+.section-title h1 .featured:after,
+.section-title h1 .featured:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
+    height: 5px;
+    background-color: #f8f8f800;
 }
