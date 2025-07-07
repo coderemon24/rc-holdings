@@ -82,12 +82,60 @@ $(document).ready(function () {
     },
   });
 
-  //  featured swiper slider
+  //  explore swiper slider
   const exploreSwiper = new Swiper(".explore-swiper", {
     loop: true,
     slidesPerView: 3,
     spaceBetween: 10,
     effect: "coverflow",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    speed: 2000,
+    direction: "horizontal",
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+      delay: 1000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+    0: {
+      slidesPerView: 1, // mobile
+    },
+    640: {
+      slidesPerView: 1.2, // small screens
+    },
+    768: {
+      slidesPerView: 2, // tablet
+    },
+    1024: {
+      slidesPerView: 3, // laptop
+    },
+    1280: {
+      slidesPerView: 3, // desktop
+    }
+  }
+    
+  });
+
+  //  business swiper slider
+  const businessesSwiper = new Swiper(".business-swiper", {
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 10,
+    effect: "slide",
     coverflowEffect: {
       rotate: 50,
       stretch: 0,

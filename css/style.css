@@ -194,3 +194,11 @@ body {
         transform: scale(1);
     }
 }
+
+/***********************
+*  sister concern section
+***********************/
+
+.service:hover .service-icon{
+    transform: rotate(45deg) !important;
+}
