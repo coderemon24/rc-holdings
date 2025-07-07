@@ -172,7 +172,7 @@ body {
 *  explore section
 ***********************/
 
-.swiper-slide-active .image-card{
+.swiper-slide-visible .image-card{
     animation: zoomIn 10s linear infinite;
 }
 
