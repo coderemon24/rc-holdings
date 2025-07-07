@@ -60,6 +60,8 @@ $(document).ready(function () {
     }
       
     });
+    
+    
     //  featured swiper slider
     const featuredSwiper = new Swiper('.featured-swiper', {
       loop: true,
@@ -81,29 +83,6 @@ $(document).ready(function () {
         delay: 5000,
         disableOnInteraction: false,
       },
-    on: {
-        slideChangeTransitionStart: function(){
-            $('.animate-fadeIn').css({
-                'opacity': '0',
-                'transform': 'translateY(30px)'
-            });
-            
-            $('.animate-fadeIn-text').css({
-                'opacity': '0',
-                'transform': 'translateY(50px)'
-            });
-        },
-        slideChangeTransitionEnd: function(){
-            $('.animate-fadeIn').css({
-                'opacity': '1',
-                'transform': 'translateY(0)'
-            });
-            $('.animate-fadeIn-text').css({
-                'opacity': '1',
-                'transform': 'translateY(0)'
-            });
-        }
-    }
       
     });
     

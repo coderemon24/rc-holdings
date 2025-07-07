@@ -149,3 +149,20 @@ body {
     height: 5px;
     background-color: #f8f8f800;
 }
+
+.swiper-slide-active .featured-content{
+    animation-name: featured;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes featured{
+    0%{
+        transform: translateY(500px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

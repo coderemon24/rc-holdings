@@ -356,22 +356,34 @@
             <!-- title -->
             <div class="section-title 
             container
-            absolute
-            z-10
-            w-full
-            top-[5rem]
-            left-1/2
-            transform
-            -translate-x-1/2
-            -translate-y-1/2
+            md:absolute
+            
+            md:z-10
+            md:w-full
+            md:top-[5rem]
+            md:left-1/2
+            md:transform
+            md:-translate-x-1/2
+            md:-translate-y-1/2
             ">
-                <h1 class="text-2xl! text-white! md:text-[50px]! font-exo2! ">
+                <h1 class="
+                text-2xl! md:text-white!
+                 md:text-[50px]! 
+                 font-exo2! ">
                     Featured Projects
                     <span class="
                     text-[12px]!
-                    text-white!
+                    md:text-white!
                     featured
-                    ">Where Innovation Meets Integrity to Create Lasting Impact</span>
+                    md:text-[12px]
+                    break-words
+                    block!
+                    md:grid!
+                    mb-4
+                    w-full
+                    ">
+                    Where Innovation Meets Integrity to Create Lasting Impact
+                  </span>
                 </h1>
             </div>
             <!-- end of title -->
@@ -382,71 +394,163 @@
                 <video src="./videos/bg.mp4" autoplay loop muted></video>
                 
                 <div class="slide-content
+                featured-content
                 absolute
                 bottom-[3rem]
                 left-[2rem]
                 md:bottom-2/8
-                md:left-1/8
+                md:left-1/12
+                bg-[rgba(0,0,0,0.49)]
+                p-4
+                md:p-12
                 ">
-                    <h1 class="
+                
+                    <p class="text-white
+                    font-montserrat
+                    uppercase
+                    tracking-widest
+                    md:mb-5
+                    ">
+                       Residential
+                    </p>
+                    
+                    <h2 class="
+                    text-white
                     text-xl 
-                    md:text-5xl 
+                    md:text-7xl 
                     font-bold
                     title
-                     animate-fadeIn
-                     text-white
-                     bg-[rgba(0,0,0,0.49)]
-                     px-4
-                     w-[80%]
-                     md:w-full
-                     ">
-                        Welcome to RC Holdings Ltd.
-                      </h1>
-                      <p class="mt-4 text-white
-                      animate-fadeIn-text
-                      bg-[rgba(0,0,0,0.49)]
-                     px-4
-                     w-[80%]
-                     md:w-full
-                      ">
-                        Empowering Your Future with Smart Investments and Innovative Solutions.
-                      </p>
+                    mb-2
+                    md:mb-4
+                    ">Aston Residence</h2>
+                    
+                    <p class="
+                    text-white
+                    font-montserrat
+                    md:text-lg
+                    ">
+                        6, Dhanmondi, Dhaka 1205.
+                    </p>
+                    
+                    <div class="mt-4 relative">
+                        <a href="./projects.html" class="
+                        before:absolute
+                        before:content-['']
+                        before:w-3
+                        before:h-3
+                        before:bg-white
+                        before:top-[.33rem]
+                        before:left-[.3rem]
+                        before:rounded-full
+                        
+                        pl-6
+                        text-white
+                        text-md
+                        uppercase
+                        tracking-widest
+                        flex
+                        group
+                        md:mt-12
+                        ">
+                        View Project
+                        <span class="
+                        overflow-hidden
+                        block
+                        w-12
+                        ">
+                        <i class="fa-solid fa-arrow-right-long
+                        transform
+                        translate-x-[-30px]
+                        group-hover:translate-x-0
+                        transition-all
+                        duration-300
+                        "></i>
+                       </span>
+                      </a>
+                    </div>
+                
                 </div>
             </div>
             <!-- Slides -->
-            <div class="swiper-slide w-full relative">
+            <div class="swiper-slide w-full relative ">
                 <video src="./videos/bg2.mp4" autoplay loop muted></video>
                 
                 <div class="slide-content
+                featured-content
                 absolute
                 bottom-[3rem]
                 left-[2rem]
                 md:bottom-2/8
-                md:left-1/8
+                md:left-1/12
+                bg-[rgba(0,0,0,0.49)]
+                p-4
+                md:p-12
                 ">
-                    <h1 class="
+                
+                    <p class="text-white
+                    font-montserrat
+                    uppercase
+                    tracking-widest
+                    md:mb-5
+                    ">
+                       Residential
+                    </p>
+                    
+                    <h2 class="
+                    text-white
                     text-xl 
-                    md:text-5xl 
+                    md:text-7xl 
                     font-bold
                     title
-                     animate-fadeIn
-                     text-white
-                     bg-[rgba(0,0,0,0.49)]
-                     px-4
-                     w-[80%]
-                     md:w-full
-                     ">
-                        Welcome to RC Holdings Ltd.
-                      </h1>
-                      <p class="mt-4 text-white
-                      animate-fadeIn-text
-                      bg-[rgba(0,0,0,0.49)]
-                     px-4
-                     w-[80%]
-                     md:w-full
-                      ">
-                        Empowering Your Future with Smart Investments and Innovative Solutions.
-                      </p>
+                    mb-2
+                    md:mb-4
+                    ">Aston Residence</h2>
+                    
+                    <p class="
+                    text-white
+                    font-montserrat
+                    md:text-lg
+                    ">
+                        6, Dhanmondi, Dhaka 1205.
+                    </p>
+                    
+                    <div class="mt-4 relative">
+                        <a href="./projects.html" class="
+                        before:absolute
+                        before:content-['']
+                        before:w-3
+                        before:h-3
+                        before:bg-white
+                        before:top-[.33rem]
+                        before:left-[.3rem]
+                        before:rounded-full
+                        
+                        pl-6
+                        text-white
+                        text-md
+                        uppercase
+                        tracking-widest
+                        flex
+                        group
+                        md:mt-12
+                        ">
+                        View Project
+                        <span class="
+                        overflow-hidden
+                        block
+                        w-12
+                        ">
+                        <i class="fa-solid fa-arrow-right-long
+                        transform
+                        translate-x-[-30px]
+                        group-hover:translate-x-0
+                        transition-all
+                        duration-300
+                        "></i>
+                       </span>
+                      </a>
+                    </div>
+                
                 </div>
             </div>
         </div>
