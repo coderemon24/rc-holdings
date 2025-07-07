@@ -18,7 +18,7 @@ $(document).ready(function () {
     loop: true,
     slidesPerView: 1,
     spaceBetween: 10,
-    effect: "cube",
+    effect: "coverflow",
     speed: 3000,
     direction: "horizontal",
 
