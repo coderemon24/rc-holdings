@@ -74,6 +74,15 @@ body {
     height: 5px;
     background-color: #f8f8f8;
 }
+.section-title .testi-title span:after,
+.section-title .testi-title span:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    height: 5px;
+    background-color: #f8f8f800;
+}
 
 
 /***********************

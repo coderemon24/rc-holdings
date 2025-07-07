@@ -177,6 +177,37 @@ $(document).ready(function () {
   }
     
   });
+
+  //  testimonials swiper slider
+  const testimonialsSwiper = new Swiper(".testimonials-swiper", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    effect: "slide",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    speed: 2000,
+    direction: "horizontal",
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
+    
+  });
   
   
   
