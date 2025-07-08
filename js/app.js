@@ -182,7 +182,7 @@ $(document).ready(function () {
   const testimonialsSwiper = new Swiper(".testimonials-swiper", {
     loop: true,
     slidesPerView: 1,
-    spaceBetween: 10,
+    spaceBetween: 40,
     effect: "slide",
     coverflowEffect: {
       rotate: 50,

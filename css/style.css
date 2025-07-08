@@ -235,6 +235,20 @@ body {
     animation-direction: alternate;
 }
 
+@media(max-width:576px){
+    .footer{
+        background: url(../images/footer.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        animation-name: footer;       
+        animation-duration: 90s;      
+        animation-timing-function: linear;  
+        animation-iteration-count: infinite; 
+        animation-direction: alternate;
+    }
+}
+
 @keyframes footer{
     0%{
         background-position-x: left;
@@ -252,3 +266,4 @@ body {
         background-position-x: center;
     }
 }
+
