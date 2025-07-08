@@ -13,6 +13,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- Tailwind CSS -->
@@ -23,7 +26,10 @@
 
 <body id="backToTop">
   <header
-    class="py-4 backdrop-blur-[.9rem] shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] md:shadow-none md:backdrop-blur-none fixed z-50 w-full">
+    class="py-4 
+    wow animate__animated animate__slideInDown
+    
+    backdrop-blur-[.9rem] shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] md:shadow-none md:backdrop-blur-none fixed z-50 w-full">
     <div class="container mx-auto px-6 md:px-0">
       <div class="flex justify-between items-center flex-row 
           md:backdrop-blur-[5rem] md:px-5 md:rounded-full 
@@ -221,7 +227,9 @@
       <div class="container mx-auto">
         <!-- title -->
         <div class="section-title mb-4">
-          <h1 class="text-2xl! md:text-[50px]! font-exo2! ">
+          <h1 class="text-2xl! md:text-[50px]! font-exo2! 
+           wow animate__animated animate__slideInDown
+          ">
             about us
             <span class="
                     text-[12px]!
@@ -243,6 +251,7 @@
                 about-text
                 mb-8
                 md:w-1/2
+                wow animate__animated animate__slideInLeft
                 ">
             <h3 class="text-2xl 
                     md:text-4xl 
@@ -272,7 +281,7 @@
             </div>
 
             <div class="mt-6">
-              <a href="./about.html" class="
+              <a href="#" class="
                         custom-btn btn-14
                         px-12!
                         text-primary!
@@ -280,9 +289,11 @@
             </div>
 
           </div>
+          
           <div class="about-image
                 md:w-1/2
                 relative
+                wow animate__animated animate__slideInRight
                 ">
             <div class="
                     play-button
@@ -545,7 +556,9 @@
 
       <!-- title -->
       <div class="section-title mb-4 container mx-auto">
-        <h1 class="text-2xl! md:text-[50px]! font-exo2! ">
+        <h1 class="text-2xl! md:text-[50px]! font-exo2! 
+        wow animate__animated animate__slideInDown
+        ">
           Explore More
           <span class="
                     text-[12px]!
@@ -564,6 +577,7 @@
             overflow-hidden
             cursor-pointer
             group
+            wow animate__animated animate__fadeInUpBig
             ">
 
             <img src="./images/cards/3.jpg" alt="card-images" class="
@@ -656,6 +670,7 @@
             overflow-hidden
             cursor-pointer
             group
+            wow animate__animated animate__fadeInDownBig
             ">
 
             <img src="./images/cards/1.jpg" alt="card-images" class="
@@ -748,6 +763,7 @@
             overflow-hidden
             cursor-pointer
             group
+            wow animate__animated animate__fadeInLeftBig
             ">
 
             <img src="./images/cards/2.jpg" alt="card-images" class="
@@ -840,6 +856,7 @@
             overflow-hidden
             cursor-pointer
             group
+            wow animate__animated animate__fadeInRightBig
             ">
 
             <img src="./images/cards/4.jpg" alt="card-images" class="
@@ -932,6 +949,7 @@
             overflow-hidden
             cursor-pointer
             group
+            wow animate__animated animate__fadeInTopLeft
             ">
 
             <img src="./images/cards/5.jpg" alt="card-images" class="
@@ -1059,7 +1077,9 @@
 
       <!-- title -->
       <div class="section-title mb-4 mt-12 container mx-auto">
-        <h1 class="text-2xl! testi-title text-white! md:text-[50px]! font-exo2! ">
+        <h1 class="text-2xl! testi-title
+        wow animate__animated animate__slideInDown
+        text-white! md:text-[50px]! font-exo2! ">
           Testimonials
           <span class="
                     text-[12px]!
@@ -1099,6 +1119,7 @@
 
             <div class="
               md:w-1/3
+              wow animate__animated animate__slideInDown
               ">
               <img src="./images/clients/1.jpg" alt="card-images" class="
                 w-full
@@ -1109,6 +1130,8 @@
             <div class="slide-content
                 md:w-2/3
                 w-full
+                
+                wow animate__animated animate__slideInUp
                 ">
               <div class="
                   ">
@@ -1168,6 +1191,7 @@
 
             <div class="
               md:w-1/3
+              wow animate__animated animate__slideInDown
               ">
               <img src="./images/clients/2.jpg" alt="card-images" class="
                 w-full
@@ -1178,6 +1202,8 @@
             <div class="slide-content
                 md:w-2/3
                 w-full
+                
+                wow animate__animated animate__slideInUp
                 ">
               <div class="
                   ">
@@ -1237,6 +1263,7 @@
 
             <div class="
               md:w-1/3
+              wow animate__animated animate__slideInDown
               ">
               <img src="./images/clients/3.jpg" alt="card-images" class="
                 w-full
@@ -1247,6 +1274,8 @@
             <div class="slide-content
                 md:w-2/3
                 w-full
+                
+                wow animate__animated animate__slideInUp
                 ">
               <div class="
                   ">
@@ -1306,6 +1335,7 @@
 
             <div class="
               md:w-1/3
+              wow animate__animated animate__slideInDown
               ">
               <img src="./images/clients/4.jpg" alt="card-images" class="
                 w-full
@@ -1316,6 +1346,8 @@
             <div class="slide-content
                 md:w-2/3
                 w-full
+                
+                wow animate__animated animate__slideInUp
                 ">
               <div class="
                   ">
@@ -1378,7 +1410,9 @@
 
       <!-- title -->
       <div class="section-title mb-4 container mx-auto">
-        <h1 class="text-2xl! md:text-[50px]! font-exo2! ">
+        <h1 class="text-2xl! md:text-[50px]! font-exo2! 
+        wow animate__animated animate__slideInDown
+        ">
           Businesses
           <span class="
                     text-[12px]!
@@ -1399,6 +1433,7 @@
             overflow-hidden
             cursor-pointer
             group
+            wow animate__animated animate__fadeInUpBig
             ">
 
             <img src="./images/cards/3.jpg" alt="card-images" class="
@@ -1599,6 +1634,7 @@
             overflow-hidden
             cursor-pointer
             group
+            wow animate__animated animate__fadeInDownBig
             ">
 
             <img src="./images/cards/3.jpg" alt="card-images" class="
@@ -1799,6 +1835,7 @@
             overflow-hidden
             cursor-pointer
             group
+            wow animate__animated animate__fadeInUpBig
             ">
 
             <img src="./images/cards/3.jpg" alt="card-images" class="
@@ -1999,6 +2036,7 @@
             overflow-hidden
             cursor-pointer
             group
+            wow animate__animated animate__fadeInDownBig
             ">
 
             <img src="./images/cards/3.jpg" alt="card-images" class="
@@ -2199,6 +2237,7 @@
             overflow-hidden
             cursor-pointer
             group
+            wow animate__animated animate__fadeInUpBig
             ">
 
             <img src="./images/cards/3.jpg" alt="card-images" class="
@@ -2399,6 +2438,7 @@
             overflow-hidden
             cursor-pointer
             group
+            wow animate__animated animate__fadeInRightBig
             ">
 
             <img src="./images/cards/3.jpg" alt="card-images" class="
@@ -2609,10 +2649,11 @@
 
     <!-- Contact -->
     <section class=" py-16 px-4 sm:px-6 lg:px-8">
-      
+
       <!-- title -->
       <div class="section-title mb-4 container mx-auto
       break-words
+      wow animate__animated animate__slideInDown
       ">
         <h1 class="text-2xl! md:text-[50px]! font-exo2! 
         
@@ -2624,7 +2665,7 @@
                     md:grid!
                     mb-4
                     ">
-              Connect with our support team for any questions, feedback, or collaboration ideas.
+            Connect with our support team for any questions, feedback, or collaboration ideas.
           </span>
         </h1>
       </div>
@@ -2633,7 +2674,9 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <!-- Contact Form -->
-          <div class="bg-white rounded-lg p-8 shadow-lg">
+          <div class="bg-white rounded-lg p-8 
+          wow animate__animated animate__slideInLeft
+          shadow-lg">
             <h3 class="text-3xl font-bold mb-6
              text-[#333]
              title
@@ -2642,9 +2685,7 @@
               <div>
                 <label for="name" class="block text-sm
                  font-medium text-[#333]">Your Name</label>
-                <input type="text" id="name" name="name"
-                  placeholder="John Doe"
-                  class="mt-1 block w-full  border border-[#333] rounded-md py-3 px-4
+                <input type="text" id="name" name="name" placeholder="John Doe" class="mt-1 block w-full  border border-[#333] rounded-md py-3 px-4
                    text-[#333] placeholder-gray-400 
                    focus:outline-none focus:ring-2
                     focus:ring-blue-500 
@@ -2654,32 +2695,27 @@
               <div>
                 <label for="email" class="block text-sm 
                 font-medium text-[#333]">Email Address</label>
-                <input type="email" id="email" name="email"
-                  placeholder="john@example.com"
+                <input type="email" id="email" name="email" placeholder="john@example.com"
                   class="mt-1 block w-full border border-[#333] rounded-md py-3 px-4 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
               </div>
 
               <div>
                 <label for="subject" class="block text-sm 
                 font-medium text-[#333]">Subject</label>
-                <input type="text" id="subject" name="subject"
-                  placeholder="I need help with..."
+                <input type="text" id="subject" name="subject" placeholder="I need help with..."
                   class="mt-1 block w-full border border-[#333] rounded-md py-3 px-4 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
               </div>
 
               <div>
                 <label for="message" class="block text-sm font-medium text-gray-300">Message</label>
-                <textarea id="message" name="message" rows="4"
-                  placeholder="Write your message here..."
-                  class="mt-1 block w-full border 
+                <textarea id="message" name="message" rows="4" placeholder="Write your message here..." class="mt-1 block w-full border 
                   border-[#333] rounded-md py-3 px-4 
                   text-white placeholder-gray-400 
                   focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
               </div>
 
               <div>
-                <button type="submit"
-                  class="
+                <button type="submit" class="
                    custom-btn
                    btn-14
                   ">
@@ -2690,7 +2726,9 @@
           </div>
 
           <!-- Contact Info -->
-          <div class="space-y-8">
+          <div class="space-y-8
+          wow animate__animated animate__slideInRight
+          ">
             <div class="rounded-md p-8 shadow-lg">
               <h3 class="text-3xl font-bold mb-6 text-[#333] *:
               title
@@ -2752,12 +2790,17 @@
         </div>
       </div>
     </section>
-    
+
     <!-- google map-->
-    <section class="map-main">
-      
+    <section class="map-main
+    wow animate__animated animate__slideInUp
+    ">
+
       <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d439.1472823785428!2d90.415092!3d23.781477!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c79e62eef9af%3A0x303fe7fe3c50debc!2sReal%20Capita%20Group!5e1!3m2!1sen!2sus!4v1751955448542!5m2!1sen!2sus" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d439.1472823785428!2d90.415092!3d23.781477!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c79e62eef9af%3A0x303fe7fe3c50debc!2sReal%20Capita%20Group!5e1!3m2!1sen!2sus!4v1751955448542!5m2!1sen!2sus"
+          width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
 
@@ -2768,8 +2811,8 @@
      pt-16 pb-8 px-4 sm:px-6 lg:px-8
      relative
      ">
-     
-     <a href="#backToTop" class="
+
+      <a href="#backToTop" class="
      fixed 
      right-8
      bottom-8
@@ -2792,10 +2835,10 @@
      transition-all
      back_btn
      ">
-      <i class="fa-solid fa-arrow-up-long"></i>  
-    </a>
-     
-     <div class="
+        <i class="fa-solid fa-arrow-up-long"></i>
+      </a>
+
+      <div class="
      absolute 
      top-0 bottom-0 
      left-0 right-0
@@ -2808,10 +2851,11 @@
       ">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <!-- Logo and About -->
-          <div class="space-y-6">
+          <div class="space-y-6
+          wow animate__animated animate__fadeInDownBig
+          ">
             <div class="flex items-center">
-              <img src="./images/logo.png" alt="RC Holdings Logo"
-                class="h-12">
+              <img src="./images/logo.png" alt="RC Holdings Logo" class="h-12">
             </div>
             <p class="text-gray-200">
               Driving innovation and creating value through strategic investments and partnerships.
@@ -2836,7 +2880,9 @@
           </div>
 
           <!-- Quick Links -->
-          <div>
+          <div class="
+          wow animate__animated animate__slideInUp
+          ">
             <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
             <ul class="space-y-3">
               <li><a href="#" class="text-gray-200 hover:text-white transition duration-150">Home</a></li>
@@ -2848,7 +2894,9 @@
           </div>
 
           <!-- Services -->
-          <div>
+          <div class="
+          wow animate__animated animate__fadeInDownBig
+          ">
             <h3 class="text-lg font-semibold mb-6">Our Services</h3>
             <ul class="space-y-3">
               <li><a href="#" class="text-gray-200 hover:text-white transition duration-150">Investment Management</a>
@@ -2863,25 +2911,26 @@
           </div>
 
           <!-- Newsletter -->
-          <div>
+          <div class="
+          wow animate__animated animate__sideInUp
+          ">
             <h3 class="text-lg font-semibold mb-6">Stay Updated</h3>
             <p class="text-gray-200 mb-4">Subscribe to our newsletter for the latest updates.</p>
             <form class="flex flex-col sm:flex-row gap-2">
-               <div class="
+              <div class="
                flex flex-col 
                sm:flex-row 
                gap-4
                md:gap-2
               ">
-                  <input type="text" placeholder="Enter your email"
-                     class="w-full px-4 py-2 
+                <input type="text" placeholder="Enter your email" class="w-full px-4 py-2 
                      rounded-md focus:outline-none 
                      placeholder-gray-200
                      ring-2 ring-gray-100
                      focus:ring-2 focus:ring-blue-500
                      text-sm
                      ">
-                     <button class="
+                <button class="
                      bg-blue-500 
                      hover:bg-blue-600 
                      text-white 
@@ -2893,12 +2942,14 @@
                      text-sm
                      cursor-pointer
                      ">Subscribe</button>
-               </div>
+              </div>
             </form>
           </div>
         </div>
 
-        <div class="border-t border-gray-100 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div class="border-t
+        wow animate__animated animate__fadeInDown
+        border-gray-100 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p class="text-gray-200 text-sm">© 2025 RC Holdings. All rights reserved.</p>
           <div class="flex space-x-6 mt-4 md:mt-0">
             <a href="#" class="text-gray-200 hover:text-gray-400 text-sm transition duration-150">Privacy Policy</a>
@@ -2914,8 +2965,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- WOW.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
   <script src="./js/app.js"></script>
+
+
+  <script>
+    new WOW().init();
+  </script>
 </body>
 
 </html>
