@@ -8,6 +8,11 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.back_btn{
+    transition: all 0.2s linear;
 }
 
 .title {
@@ -210,4 +215,40 @@ body {
 
 .service:hover .service-icon{
     transform: rotate(45deg) !important;
+}
+
+
+
+/***********************
+* footer section
+***********************/
+
+.footer{
+    background: url(../images/footer.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation-name: footer;       
+    animation-duration: 40s;      
+    animation-timing-function: linear;  
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+}
+
+@keyframes footer{
+    0%{
+        background-position-x: left;
+    }
+    25%{
+        background-position-x: right;
+    }
+    50%{
+        background-position-x: left;
+    }
+    75%{
+        background-position-x: right;
+    }
+    100%{
+        background-position-x: center;
+    }
 }

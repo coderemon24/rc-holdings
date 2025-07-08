@@ -210,7 +210,17 @@ $(document).ready(function () {
   });
   
   
-  
+  $(window).on("scroll", function () {
+    if ($(this).scrollTop() > 200) {
+      $(".back_btn").removeClass("hidden").addClass("flex");
+      $(".back_btn").fadeIn();
+    } else {
+      $(".back_btn").fadeOut();
+    }
+  });
+  $(".back_btn").on("click", function () {
+  $("html, body").animate({ scrollTop: 0 }, "smooth"); 
+});
   
   
   
