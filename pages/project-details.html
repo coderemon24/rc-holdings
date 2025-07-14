@@ -167,8 +167,8 @@
                 
                 <!-- Project Description -->
                 <div class="md:col-span-2">
-                    <h2 class="text-3xl font-heading font-bold 
-                    text-kaizen-blue mb-6 font-['Raleway'] uppercase">
+                    <h2 class="text-4xl text-[#222] font-heading font-bold 
+                    mb-6 font-['Raleway'] uppercase">
                         About the Project
                     </h2>
                     <div class="space-y-4">
@@ -223,27 +223,34 @@
     <!-- Gallery Section -->
     <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-heading font-bold text-kaizen-blue mb-8 text-center
-            font-['Raleway']
-            uppercase
-            ">Project Gallery</h2>
+            <!-- title -->
+      <div class="section-title mb-4 container mx-auto">
+        <h1 class="text-2xl! md:text-[50px]! font-exo2! 
+        wow animate__animated animate__slideInDown
+        ">
+          related projects
+          <span class="
+                    text-[12px]!
+                    ">Explore Projects That Blend Vision with Integrity</span>
+        </h1>
+      </div>
             
             <!-- Gallery Filters -->
             <div class="flex justify-center mb-8">
                 <div class="inline-flex rounded-md shadow-sm">
-                    <button class="px-4 py-2 text-sm font-medium rounded-l-lg bg-kaizen-blue text-white">
+                    <button class="px-4 py-2 cursor-pointer text-md font-medium rounded-l-lg bg-blue-900 text-white">
                         All
                     </button>
-                    <button class="px-4 py-2 text-sm font-medium bg-white text-kaizen-blue hover:bg-gray-100">
+                    <button class="px-4 py-2 cursor-pointer text-md font-medium bg-white text-kaizen-blue hover:bg-blue-900 hover:text-white transition-all duration-300">
                         Exterior
                     </button>
-                    <button class="px-4 py-2 text-sm font-medium bg-white text-kaizen-blue hover:bg-gray-100">
+                    <button class="px-4 py-2 cursor-pointer text-md font-medium bg-white text-kaizen-blue hover:bg-blue-900 hover:text-white transition-all duration-300">
                         Interior
                     </button>
-                    <button class="px-4 py-2 text-sm font-medium bg-white text-kaizen-blue hover:bg-gray-100">
+                    <button class="px-4 py-2 cursor-pointer text-md font-medium bg-white text-kaizen-blue hover:bg-blue-900 hover:text-white transition-all duration-300">
                         Construction
                     </button>
-                    <button class="px-4 py-2 text-sm font-medium rounded-r-lg bg-white text-kaizen-blue hover:bg-gray-100">
+                    <button class="px-4 py-2 cursor-pointer text-md font-medium rounded-r-lg bg-white text-kaizen-blue hover:bg-blue-900 hover:text-white transition-all duration-300">
                         Renders
                     </button>
                 </div>
@@ -251,12 +258,16 @@
             
             <!-- Image Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <div class="group cursor-pointer relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
                     <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
                          alt="Project Image 1" 
                          class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-300">
-                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                        <span class="text-white font-medium">View Larger</span>
+                    <div class="absolute inset-0 bg-black/50 bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <a class="text-white font-medium
+                        bg-blue-900
+                        py-2 px-4
+                        rounded-md
+                        " title="Go For A Virtual Tour">Make a Tour</a>
                     </div>
                 </div>
                 <!-- More gallery items would go here -->
@@ -271,98 +282,110 @@
     </section>
 
     <!-- Project Timeline -->
-<section class="py-16 bg-white">
-    <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold 
-        font-[Raleway]
-        text-[#333]
-        mb-12 text-center font-raleway uppercase tracking-wider">
-            Project Timeline
-        </h2>
-        
-        <div class="relative">
-            <!-- Timeline line -->
-            <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-amber-500 transform -translate-x-1/2"></div>
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <!-- title -->
+      <div class="section-title mb-4 container mx-auto">
+        <h1 class="text-2xl! md:text-[50px]! font-exo2! 
+        wow animate__animated animate__slideInDown
+        ">
+          related projects
+          <span class="
+                    text-[12px]!
+                    ">Explore Projects That Blend Vision with Integrity</span>
+        </h1>
+      </div>
             
-            <!-- Timeline items -->
-            <div class="space-y-12 md:space-y-16">
-                <!-- Timeline Item 1 -->
-                <div class="relative flex flex-col md:flex-row items-center">
-                    <div class="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
-                        <div class="md:mr-8 p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                            <h3 class="text-xl font-bold text-blue-800">Planning Phase</h3>
-                            <p class="text-amber-600 font-medium">Q1 2022</p>
-                            <p class="mt-2 text-gray-600">Initial consultations and design development with client and architects.</p>
+            <div class="relative">
+                <!-- Timeline line -->
+                <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-amber-500 transform -translate-x-1/2"></div>
+                
+                <!-- Timeline items -->
+                <div class="space-y-12 md:space-y-16">
+                    <!-- Timeline Item 1 -->
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
+                            <div class="md:mr-8 p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                                <h3 class="text-xl font-bold text-blue-800">Planning Phase</h3>
+                                <p class="text-amber-600 font-medium">Q1 2022</p>
+                                <p class="mt-2 text-gray-600">Initial consultations and design development with client and architects.</p>
+                            </div>
+                        </div>
+                        <div class="hidden md:block absolute left-1/2 -ml-3 w-6 h-6 bg-amber-500 rounded-full border-4 border-white transform  z-10"></div>
+                        <div class="md:w-1/2 md:pl-12">
+                            <!-- Empty on left side -->
                         </div>
                     </div>
-                    <div class="hidden md:block absolute left-1/2 -ml-3 w-6 h-6 bg-amber-500 rounded-full border-4 border-white transform  z-10"></div>
-                    <div class="md:w-1/2 md:pl-12">
-                        <!-- Empty on left side -->
-                    </div>
-                </div>
-                
-                <!-- Timeline Item 2 -->
-                <div class="relative flex flex-col md:flex-row items-center">
-                    <div class="md:w-1/2 md:pr-12">
-                        <!-- Empty on right side -->
-                    </div>
-                    <div class="hidden md:block 
-                    absolute left-1/2 -ml-3 w-6 h-6 
-                    bg-amber-500 rounded-full 
-                    border-4 border-white 
-                    transform
-                    rotate-90
-                    "></div>
-                    <div class="md:w-1/2 md:pl-12 mt-6 md:mt-0">
-                        <div class="md:ml-8 p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                            <h3 class="text-xl font-bold text-blue-800">Approvals Obtained</h3>
-                            <p class="text-amber-600 font-medium">Q2 2022</p>
-                            <p class="mt-2 text-gray-600">Received all necessary permits and regulatory approvals for construction.</p>
+                    
+                    <!-- Timeline Item 2 -->
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12">
+                            <!-- Empty on right side -->
+                        </div>
+                        <div class="hidden md:block 
+                        absolute left-1/2 -ml-3 w-6 h-6 
+                        bg-amber-500 rounded-full 
+                        border-4 border-white 
+                        transform
+                        rotate-90
+                        "></div>
+                        <div class="md:w-1/2 md:pl-12 mt-6 md:mt-0">
+                            <div class="md:ml-8 p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                                <h3 class="text-xl font-bold text-blue-800">Approvals Obtained</h3>
+                                <p class="text-amber-600 font-medium">Q2 2022</p>
+                                <p class="mt-2 text-gray-600">Received all necessary permits and regulatory approvals for construction.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <!-- Timeline Item 3 -->
-                <div class="relative flex flex-col md:flex-row items-center">
-                    <div class="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
-                        <div class="md:mr-8 p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                            <h3 class="text-xl font-bold text-blue-800">Construction Begins</h3>
-                            <p class="text-amber-600 font-medium">Q3 2022</p>
-                            <p class="mt-2 text-gray-600">Groundbreaking and commencement of primary construction activities.</p>
+                    
+                    <!-- Timeline Item 3 -->
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
+                            <div class="md:mr-8 p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                                <h3 class="text-xl font-bold text-blue-800">Construction Begins</h3>
+                                <p class="text-amber-600 font-medium">Q3 2022</p>
+                                <p class="mt-2 text-gray-600">Groundbreaking and commencement of primary construction activities.</p>
+                            </div>
+                        </div>
+                        <div class="hidden md:block absolute left-1/2 -ml-3 w-6 h-6 bg-amber-500 rounded-full border-4 border-white  z-10"></div>
+                        <div class="md:w-1/2 md:pl-12">
+                            <!-- Empty on left side -->
                         </div>
                     </div>
-                    <div class="hidden md:block absolute left-1/2 -ml-3 w-6 h-6 bg-amber-500 rounded-full border-4 border-white  z-10"></div>
-                    <div class="md:w-1/2 md:pl-12">
-                        <!-- Empty on left side -->
-                    </div>
-                </div>
-                
-                <!-- Timeline Item 4 -->
-                <div class="relative flex flex-col md:flex-row items-center">
-                    <div class="md:w-1/2 md:pr-12">
-                        <!-- Empty on right side -->
-                    </div>
-                    <div class="hidden md:block absolute left-1/2 -ml-3 w-6 h-6 bg-amber-500 rounded-full border-4 border-white z-10"></div>
-                    <div class="md:w-1/2 md:pl-12 mt-6 md:mt-0">
-                        <div class="md:ml-8 p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                            <h3 class="text-xl font-bold text-blue-800">Project Completion</h3>
-                            <p class="text-amber-600 font-medium">Q1 2023</p>
-                            <p class="mt-2 text-gray-600">Final inspections completed and project delivered to client.</p>
+                    
+                    <!-- Timeline Item 4 -->
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12">
+                            <!-- Empty on right side -->
+                        </div>
+                        <div class="hidden md:block absolute left-1/2 -ml-3 w-6 h-6 bg-amber-500 rounded-full border-4 border-white z-10"></div>
+                        <div class="md:w-1/2 md:pl-12 mt-6 md:mt-0">
+                            <div class="md:ml-8 p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                                <h3 class="text-xl font-bold text-blue-800">Project Completion</h3>
+                                <p class="text-amber-600 font-medium">Q1 2023</p>
+                                <p class="mt-2 text-gray-600">Final inspections completed and project delivered to client.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Technical Specifications -->
     <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-heading font-bold text-kaizen-blue mb-8 text-center
-            font-['Raleway']
-            uppercase
-            ">Technical Specifications</h2>
+            <!-- title -->
+      <div class="section-title mb-4 container mx-auto">
+        <h1 class="text-2xl! md:text-[50px]! font-exo2! 
+        wow animate__animated animate__slideInDown
+        ">
+          related projects
+          <span class="
+                    text-[12px]!
+                    ">Explore Projects That Blend Vision with Integrity</span>
+        </h1>
+      </div>
             
             <div class="max-w-3xl mx-auto">
                 <!-- Accordion Item -->
