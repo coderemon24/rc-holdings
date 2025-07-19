@@ -111,23 +111,22 @@ $(document).ready(function () {
       disableOnInteraction: false,
     },
     breakpoints: {
-    0: {
-      slidesPerView: 1, // mobile
+      0: {
+        slidesPerView: 1, // mobile
+      },
+      640: {
+        slidesPerView: 1.2, // small screens
+      },
+      768: {
+        slidesPerView: 2, // tablet
+      },
+      1024: {
+        slidesPerView: 3, // laptop
+      },
+      1280: {
+        slidesPerView: 3, // desktop
+      },
     },
-    640: {
-      slidesPerView: 1.2, // small screens
-    },
-    768: {
-      slidesPerView: 2, // tablet
-    },
-    1024: {
-      slidesPerView: 3, // laptop
-    },
-    1280: {
-      slidesPerView: 3, // desktop
-    }
-  }
-    
   });
 
   //  business swiper slider
@@ -159,23 +158,22 @@ $(document).ready(function () {
       disableOnInteraction: false,
     },
     breakpoints: {
-    0: {
-      slidesPerView: 1, // mobile
+      0: {
+        slidesPerView: 1, // mobile
+      },
+      640: {
+        slidesPerView: 1.2, // small screens
+      },
+      768: {
+        slidesPerView: 2, // tablet
+      },
+      1024: {
+        slidesPerView: 3, // laptop
+      },
+      1280: {
+        slidesPerView: 3, // desktop
+      },
     },
-    640: {
-      slidesPerView: 1.2, // small screens
-    },
-    768: {
-      slidesPerView: 2, // tablet
-    },
-    1024: {
-      slidesPerView: 3, // laptop
-    },
-    1280: {
-      slidesPerView: 3, // desktop
-    }
-  }
-    
   });
 
   //  testimonials swiper slider
@@ -206,10 +204,8 @@ $(document).ready(function () {
       delay: 1500,
       disableOnInteraction: false,
     },
-    
   });
-  
-  
+
   $(window).on("scroll", function () {
     if ($(this).scrollTop() > 200) {
       $(".back_btn").removeClass("hidden").addClass("flex");
@@ -219,9 +215,40 @@ $(document).ready(function () {
     }
   });
   $(".back_btn").on("click", function () {
-  $("html, body").animate({ scrollTop: 0 }, "smooth"); 
-});
-  
+    $("html, body").animate({ scrollTop: 0 }, "smooth");
+  });
+
+  const mixer = mixitup('#gallery-grid', {
+        selectors: {
+          target: '.mix'
+        },
+        animation: {
+          duration: 300,
+          effects: 'fade scale(0.5)',
+          easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)'
+        }
+      });
+
+      // Manual filtering without relying on MixItUp's auto data-filter
+      $('#filter-buttons button').click(function () {
+        const group = $(this).attr('data-group');
+
+        // Update active button styles
+        $('#filter-buttons button')
+          .removeClass('bg-blue-900 text-white')
+          .addClass('bg-white text-blue-900');
+
+        $(this)
+          .addClass('bg-blue-900 text-white')
+          .removeClass('bg-white text-blue-900');
+
+        // Apply MixItUp filter manually
+        if (group === 'all') {
+          mixer.filter('all');
+        } else {
+          mixer.filter('.' + group);
+        }
+      });
   
   
   
