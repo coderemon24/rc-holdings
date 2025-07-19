@@ -15,11 +15,12 @@
     rel="stylesheet" />
   <!-- Animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- Tailwind CSS -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- Pannellum CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.css" />
 
   <link rel="stylesheet" href="../css/style.css" />
 </head>
@@ -224,7 +225,7 @@
     </div>
   </section>
 
-   <!-- Gallery Section -->
+  <!-- Gallery Section -->
   <section class="py-16 bg-gray-50">
     <div class="container mx-auto px-4">
 
@@ -237,67 +238,129 @@
       <!-- Gallery Filters -->
       <div class="flex justify-center mb-8">
         <div class="inline-flex rounded-md shadow-sm" id="filter-buttons">
-          <button type="button" class="filter-btn px-4 py-2 font-medium rounded-l-lg bg-blue-900 text-white" data-group="all">All</button>
-          <button type="button" class="filter-btn px-4 py-2 font-medium bg-white text-blue-900 hover:bg-blue-900 hover:text-white transition" data-group="exterior">Exterior</button>
-          <button type="button" class="filter-btn px-4 py-2 font-medium bg-white text-blue-900 hover:bg-blue-900 hover:text-white transition" data-group="interior">Interior</button>
-          <button type="button" class="filter-btn px-4 py-2 font-medium bg-white text-blue-900 hover:bg-blue-900 hover:text-white transition" data-group="construction">Construction</button>
-          <button type="button" class="filter-btn px-4 py-2 font-medium rounded-r-lg bg-white text-blue-900 hover:bg-blue-900 hover:text-white transition" data-group="renders">Renders</button>
+          <button type="button" class="filter-btn px-4 py-2 font-medium rounded-l-lg bg-blue-900 text-white"
+            data-group="all">All</button>
+          <button type="button"
+            class="filter-btn px-4 py-2 font-medium bg-white text-blue-900 hover:bg-blue-900 hover:text-white transition"
+            data-group="exterior">Exterior</button>
+          <button type="button"
+            class="filter-btn px-4 py-2 font-medium bg-white text-blue-900 hover:bg-blue-900 hover:text-white transition"
+            data-group="interior">Interior</button>
+          <button type="button"
+            class="filter-btn px-4 py-2 font-medium bg-white text-blue-900 hover:bg-blue-900 hover:text-white transition"
+            data-group="construction">Construction</button>
+          <button type="button"
+            class="filter-btn px-4 py-2 font-medium rounded-r-lg bg-white text-blue-900 hover:bg-blue-900 hover:text-white transition"
+            data-group="renders">Renders</button>
         </div>
       </div>
 
       <!-- Image Grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
+      <div class="grid image-container grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
+
         <!-- Gallery Items -->
         <div class="mix exterior group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition">
-          <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1350&q=80" class="w-full h-64 object-cover transform group-hover:scale-105 transition" />
-          <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-            <a class="text-white font-medium bg-blue-900 py-2 px-4 rounded-md">Make a Tour</a>
+          <img data-src="../images/panorama/1.jpg" src="../images/panorama/1.jpg" width=""
+            class="w-full h-64 object-cover transform group-hover:scale-105 transition" />
+          <div
+            class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+            <a class="text-white tour cursor-pointer font-medium bg-blue-900 py-2 px-4 rounded-md">Make a Tour</a>
           </div>
         </div>
-
-        <div class="mix interior group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition">
-          <img src="https://images.unsplash.com/photo-1583845112203-454c7c581aad?auto=format&fit=crop&w=1350&q=80" class="w-full h-64 object-cover transform group-hover:scale-105 transition" />
-          <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-            <a class="text-white font-medium bg-blue-900 py-2 px-4 rounded-md">Make a Tour</a>
-          </div>
-        </div>
-
-        <div class="mix construction group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition">
-          <img src="https://images.unsplash.com/photo-1454779132693-e5cd0a216ed3?auto=format&fit=crop&w=1350&q=80" class="w-full h-64 object-cover transform group-hover:scale-105 transition" />
-          <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-            <a class="text-white font-medium bg-blue-900 py-2 px-4 rounded-md">Make a Tour</a>
-          </div>
-        </div>
-
-        <div class="mix renders group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition">
-          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1350&q=80" class="w-full h-64 object-cover transform group-hover:scale-105 transition" />
-          <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-            <a class="text-white font-medium bg-blue-900 py-2 px-4 rounded-md">Make a Tour</a>
-          </div>
-        </div>
-
+        <!-- Gallery Items -->
         <div class="mix exterior group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition">
-          <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=1350&q=80" class="w-full h-64 object-cover transform group-hover:scale-105 transition" />
-          <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-            <a class="text-white font-medium bg-blue-900 py-2 px-4 rounded-md">Make a Tour</a>
+          <img data-src="../images/panorama/2.jpg" src="../images/panorama/2.jpg" width=""
+            class="w-full h-64 object-cover transform group-hover:scale-105 transition" />
+          <div
+            class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+            <a class="text-white tour cursor-pointer font-medium bg-blue-900 py-2 px-4 rounded-md">Make a Tour</a>
           </div>
         </div>
 
-        <div class="mix interior group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition">
-          <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=1350&q=80" class="w-full h-64 object-cover transform group-hover:scale-105 transition" />
-          <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-            <a class="text-white font-medium bg-blue-900 py-2 px-4 rounded-md">Make a Tour</a>
-          </div>
+
+        <div class="text-center mt-8">
+          <button class="px-6 py-3 bg-yellow-500 text-white font-medium rounded-md hover:bg-yellow-600 transition">
+            View Full Gallery
+          </button>
         </div>
       </div>
 
-      <div class="text-center mt-8">
-        <button class="px-6 py-3 bg-yellow-500 text-white font-medium rounded-md hover:bg-yellow-600 transition">
-          View Full Gallery
-        </button>
-      </div>
-    </div>
+      <!-- Virtual Tour Section -->
+      <div class="container mx-auto px-4 mt-16">
+        <div class="
+        w-full
+        h-screen
+        bg-black/80
+        fixed
+        z-[999]
+        top-0
+        left-0
+        hidden
+        tour-overlay
+        ">
+          <div class="flex items-center justify-center h-full">
+            <button id="close-tour" class="text-white cursor-pointer text-3xl font-bold absolute top-4 right-4">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+
+
+          <div class="
+        tour-modal
+    scale-0
+    transition-all
+    duration-300
+    bg-black/80
+    shadow-xl
+    fixed
+    top-[50%]
+    left-1/2
+    transform
+    -translate-x-1/2 -translate-y-1/2
+    rounded-lg
+    z-[999999999999]
+    w-[90%]
+    h-[90vh]
+    overflow-hidden
+    ">
+            <div class="bg-black h-screen m-0 p-0 overflow-hidden font-sans">
+              <!-- For demo, hidden div with sample images
+    <div id="images-container" class="hidden">
+        <img data-src="../images/panorama/1.jpg" alt="img1" />
+        <img data-src="../images/panorama/2.jpg" alt="img2" />
+        <img data-src="../images/panorama/3.jpg" alt="img3" />
+    </div> -->
+
+              <div id="panorama" class="w-full h-screen relative"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Virtual Tour Section End-->
+
   </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <!-- Project Timeline -->
   <section class="py-16 bg-white">
@@ -1163,9 +1226,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <!-- mixitup -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+  <!-- pannellum -->
+  <script src="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.js"></script>
 
+  <script src="../js/virtual-tour.js"></script>
   <script src="../js/app.js"></script>
-
 
   <script>
     new WOW().init();

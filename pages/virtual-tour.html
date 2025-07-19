@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>360 Panorama Viewer with Dynamic data-src Images</title>
+  <!-- Pannellum CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.css"
+  />
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="">
+
+  <section class="bg-black h-screen m-0 p-0 overflow-hidden font-sans">
+    <!-- For demo, hidden div with sample images -->
+    <div id="images-container" class="hidden">
+        <img data-src="./panos/room1.jpg" alt="img1" />
+        <img data-src="https://pannellum.org/images/bma-1.jpg" alt="img2" />
+        <img data-src="./panos/room2.jpg" alt="img3" />
+    </div>
+
+    <div id="panorama" class="w-full h-screen relative"></div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.js"></script>
+  <script>
+    
+  </script>
+
+</body>
+</html>
