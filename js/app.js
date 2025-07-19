@@ -218,37 +218,37 @@ $(document).ready(function () {
     $("html, body").animate({ scrollTop: 0 }, "smooth");
   });
 
-  const mixer = mixitup('#gallery-grid', {
-        selectors: {
-          target: '.mix'
-        },
-        animation: {
-          duration: 300,
-          effects: 'fade scale(0.5)',
-          easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)'
-        }
-      });
+  // Initialize MixItUp
+    const mixer = mixitup('#gallery-grid', {
+      selectors: {
+        target: '.mix'
+      },
+      animation: {
+        duration: 300,
+        effects: 'fade scale(0.5)',
+        easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)'
+      }
+    });
 
-      // Manual filtering without relying on MixItUp's auto data-filter
-      $('#filter-buttons button').click(function () {
-        const group = $(this).attr('data-group');
+    // Filter Logic
+    $('#filter-buttons button').on('click', function () {
+      const group = $(this).attr('data-group');
 
-        // Update active button styles
-        $('#filter-buttons button')
-          .removeClass('bg-blue-900 text-white')
-          .addClass('bg-white text-blue-900');
+      // Style update
+      $('#filter-buttons button')
+        .removeClass('bg-blue-900 text-white')
+        .addClass('bg-white text-blue-900');
+      $(this)
+        .addClass('bg-blue-900 text-white')
+        .removeClass('bg-white text-blue-900');
 
-        $(this)
-          .addClass('bg-blue-900 text-white')
-          .removeClass('bg-white text-blue-900');
-
-        // Apply MixItUp filter manually
-        if (group === 'all') {
-          mixer.filter('all');
-        } else {
-          mixer.filter('.' + group);
-        }
-      });
+      // Filter action
+      if (group === 'all') {
+        mixer.filter('all');
+      } else {
+        mixer.filter(`.${group}`);
+      }
+    });
   
   
   
